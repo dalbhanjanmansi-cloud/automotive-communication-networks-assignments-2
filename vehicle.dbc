@@ -1,0 +1,12 @@
+VERSION ""
+
+NS_ :
+BS_:
+BU_: EngineECU DashboardECU MonitorECU
+
+BO_ 256 EngineData: 8 EngineECU
+ SG_ EngineRPM : 0|16@1+ (1,0) [0|8000] "rpm" DashboardECU,MonitorECU
+ SG_ EngineTemperature : 16|8@1+ (1,-40) [-40|215] "degC" DashboardECU,MonitorECU
+
+BO_ 512 VehicleSpeed: 8 EngineECU
+ SG_ Speed : 0|16@1+ (0.01,0) [0|250] "km/h" DashboardECU,MonitorECU
