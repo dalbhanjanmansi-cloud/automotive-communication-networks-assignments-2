@@ -1,0 +1,8 @@
+Expected dashboard output:
+
+RPM: 2500 rpm | Temperature: 90 C
+Vehicle Speed: 65.00 km/h
+
+Expected monitor output will contain frames with:
+ID=0x100
+ID=0x200
